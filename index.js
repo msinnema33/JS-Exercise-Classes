@@ -93,7 +93,6 @@ class Car {
             return `I ran out of fuel at ${this.odometer} miles!`;
         }
     }
-
 }
 
 /*
@@ -144,7 +143,7 @@ class Instructor extends Lambdasian {
         return `Today we are learning about ${subject}`;
     }
     grade(studentObj, subject) {
-        return `${this.name} receives a perfect score on ${subject}`;
+        return `${studentObj.name} receives a perfect score on ${subject}`;
     }
 }
 
@@ -179,7 +178,6 @@ class Student extends Lambdasian {
     sprintChallenge(subject) {
         return `${this.name} has begun sprint challenge on ${subject}`;
     }
-
 }
 
 /*
@@ -205,7 +203,7 @@ class ProjectManager extends Instructor {
         return `${this.name} announces to ${channel}, @channel standy times!`;
     }
     debugsCode(studentObj, subject) {
-        return `${this.name} debugs ${this.name}'s code on ${subject}`;
+        return `${this.name} debugs ${studentObj.name}'s code on ${subject}`;
     }
 }
 
